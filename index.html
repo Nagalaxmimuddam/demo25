@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1) take prompt and Convert to Uppercase and lowercase
+          
+        let str1=prompt("enter a name").toUpperCase();
+        console.log(str1)
+
+        let str2=prompt("enter a name").toLowerCase();
+        console.log(str2)
+
+        //reverse of a string
+        let str = prompt("enter a name")
+const res = str.split('').reverse().join('');
+console.log(res);
+        
+//Username Validation
+let str3=prompt("enter username");
+if(str3.length>=5 && str3.length<=15){
+    console.log("valid")
+}
+else{
+    console.log("not valid")
+    
+}
+//email writing
+let str5=prompt("enter first name").toLowerCase();
+    let str6=prompt("enter last name").toLowerCase();
+     let str7="@gmail.com"
+    console.log(str5.concat(".",str6,str7));
+
+// Word Counter
+
+    let str8=prompt("enter a sentence")
+    console.log(str8.split(" ").length);
+
+//palindrome 
+
+    let str9=prompt("enter a name");
+    let str10=str9.split("").reverse().join("");
+    console.log(str10);
+    if(str9==str10){
+        console.log("it is a palindrome");
+    }
+    else{
+        console.log("it is not a palindrome");
+    }
+    </script>
+</body>
+</html>
